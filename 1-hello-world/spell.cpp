@@ -1,11 +1,9 @@
-// Harry Potter spell
-
+//Harry Potter
 #include <iostream>
 
-int main() {
-
+int main() 
+{
+  
   std::cout << "Expecto Patronum\n";
-
-  return 0;
-
+  
 }
