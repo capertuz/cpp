@@ -1,25 +1,23 @@
 #include <iostream>
 
-int main()
-{
+int main() {
 
-  double p;
-  double q;
-  double c;
-
-  double dollars;
-
-  std::cout << "🇲🇽 Enter number of Pesos: ";
-  std::cin >> p;
-
-  std::cout << "🇬🇹 Enter number of Guatemalan Quetzals: ";
-  std::cin >> q;
-
-  std::cout << "🇸🇻 Enter number of Salvadoran Colons: ";
-  std::cin >> c;
-
-  dollars = 0.049 * p + 0.1305 * q + 0.1144 * c;
-
-  std::cout << "Total USD = $" << dollars << "\n";
-
+  float pesos;// for Pesos
+	float reais;// for Reais
+	float soles;// for Soles
+  float dollars;// for Soles
+  
+  std::cout<<"Enter number of Colombian Pesos: \n";
+  std::cin>>pesos;
+  std::cout<<"Enter number of Brazillian Reais: \n";
+  std::cin>>reais;
+  std::cout<<"Enter number of Peruvian Soles: \n";
+  std::cin>>soles;
+  
+  //Exchange rates cop 0.00029, reais 0.25, soles 0.29
+  
+  dollars = (0.00029 * pesos) + (0.25 * reais) + ( 0.29 * soles);
+  std::cout<<"US Dollars = $"<<dollars<<"\n";
+  
+  return 0;
 }
