@@ -3,45 +3,35 @@
 #include <string>
 
 int main() {
+
+  // Whale, whale, whale.
+  // What have we got here?
   
-  std::string input = "Turpentine and turtles.";
-
-  std::vector<char> vowels;
-
-  vowels.push_back('a');
-  vowels.push_back('e');
-  vowels.push_back('i');
-  vowels.push_back('o');
-  vowels.push_back('u');
-
-  std::vector<char> whale_talk;
-
-  for (int i = 0; i < input.size(); i++) {
+  std::string str= "turpentine and turtles";
+  std::vector<char> vowels = {'a','e','i','o','u'};
+   std::vector<char> result;
+  
+  for(int i= 0; i<str.size();i++)
+  {
     
-    for (int j = 0; j < vowels.size(); j++) {
-
-      if (input[i] == vowels[j]) {
-
-        whale_talk.push_back(input[i]);
-       
-        if (input[i] == 'e' || input [i] == 'u') {
-
-        whale_talk.push_back(input[i]);
-        
+    for(int j= 0; j<vowels.size();j++)
+  	{
+    	if(str[i] == vowels[j])
+      {
+        if(str[i] == 'e' || str[i] == 'u')
+        {
+          result.push_back(str[i]);
+          result.push_back(str[i]);
         }
-      
+        else result.push_back(str[i]);
       }
-      
-    }
-  
+    
+  	}
   }
   
-  for (int k = 0; k < whale_talk.size(); k++) {
-    
-    std::cout << whale_talk[k];
-    
+  for(int j= 0; j<result.size();j++)
+  	{
+    	std::cout<<result[j];
   }
-  
-  std::cout << "\n";
-  
+std::cout<<"\n";
 }
