@@ -1,37 +1,28 @@
-#include <string>
+#include <string> 
+#include "functions.hpp"
 
-void asterisk(std::string word, std::string &text, int i) {
-  
-  for (int k = 0; k < word.size(); ++k) {
-  
-    text[i+k] = '*';
-      
-  }
-  
-}
-
-void bleep(std::string word, std::string &text) {
-    
-  for (int i = 0; i < text.size(); ++i) {
-        
-    int match = 0;
-        
-    for (int j = 0; j < word.size(); ++j) {
-    
-      if (text[i+j] == word[j]) {
-        
-        ++match;
-          
+void bleep(std::string thisword, std::string &thistext)
+{
+  for(int i= 0; i<thistext.size(); i++)
+  {
+    int start=0;
+    int end=0;
+    bool match = false;
+    if(thistext[i] == thisword[0])
+    {
+      match = true;
+      for(int j= 1; j<thisword.size(); j++)
+      {
+         if(thistext[i+j] != thisword[j]){match = false; break;} 
       }
-    
     }
-        
-    if (match == word.size()) {
-            
-      asterisk(word, text, i);
-        
+    if (match == true)
+    {
+      for(int j= 0; j<thisword.size(); j++)
+      {
+         thistext[i+j] = '*'; 
+      }
     }
-      
   }
-    
+  
 }
