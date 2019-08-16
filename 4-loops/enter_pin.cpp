@@ -10,17 +10,19 @@ int main() {
   std::cout << "Enter your PIN: ";
   std::cin >> pin;
   
-  while (pin != 1234) {
+  while (pin != 1234 && tries <= 3) {
     
-    std::cout << "Wrong PIN. Try again: ";
+    std::cout << "Enter your PIN: ";
     std::cin >> pin;
     tries++;
     
   }
   
-  std::cout << "PIN accepted!\n";
-  std::cout << "You now have access.\n"; 
-   
-  return 0;
+  if (pin == 1234) {
+    
+    std::cout << "PIN accepted!\n";
+    std::cout << "You now have access.\n"; 
+    
+  }
   
 }
