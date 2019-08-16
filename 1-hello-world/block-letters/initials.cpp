@@ -1,18 +1,13 @@
-// Sonny Li
-// Fun Fact: I played guitar in a band called Attica.
-
 #include <iostream>
 
 int main() {
-
-  std::cout << "  SSS   L     \n";
-  std::cout << " S   S  L     \n";
-  std::cout << " S      L     \n";
-  std::cout << "  SSS   L     \n";
-  std::cout << "     S  L     \n";
-  std::cout << " S   S  L     \n";
-  std::cout << "  SSS   LLLLL \n";
-
-  return 0;
-
+  
+  std::cout << " CCC    PPPP\n";
+  std::cout << "C    C  P    P\n";
+  std::cout << "C       P    P\n";
+  std::cout << "C       PPPP\n";
+  std::cout << "C       P\n";
+  std::cout << "C    C  P\n";
+  std::cout << " CCC    P\n";
+  //return 0;
 }
