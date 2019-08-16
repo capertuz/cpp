@@ -24,21 +24,19 @@ int main() {
     case 6 :
       std::cout << "Charizard\n";
       break;
-    case 7 :
+      case 7 :
       std::cout << "Squirtle\n";
       break;
-    case 8 :
+      case 8 :
       std::cout << "Wartortle\n";
       break;
-    case 9 :
+      case 9 :
       std::cout << "Blastoise\n";
       break;
     default :
-      std::cout << "Not starter\n";
+      std::cout << "Unknown\n";
       break;
   
   }
-  
-  return 0;
   
 }
