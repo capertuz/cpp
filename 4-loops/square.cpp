@@ -7,16 +7,17 @@ int main() {
   
   // Write a while loop here:
   
-  while (i < 10) {
-
-    square = i * i;
-    
-    std::cout << i << "  " << square << "\n";
-
+  while(i<10)
+  {
+    square = i*i;
+    std::cout<<i<<"  "<<square<<"\n";
     i++;
-    
   }
-
+  
   return 0;
+  
+  
+  
+  
   
 }
