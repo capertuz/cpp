@@ -1,13 +1,14 @@
 #include <iostream>
 
-int main() {
+int main() 
+{
   
-  std::cout << "Dear Self,            \n";
-  std::cout << "                      \n";
-  std::cout << "I will build a VR app.\n";
-  std::cout << "                      \n";
-  std::cout << "               - Sonny\n";
+  std::cout << "Dear Self,\n";
+  std::cout << "Finish this ASAP,\n";
+  std::cout << "08/12/2019\n";
   
-  return 0;
+  
+  
+  
   
 }
